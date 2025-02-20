@@ -444,3 +444,23 @@ padding-left: 30px
   font-size: large;
   text-shadow: 1px 1px 2px black;
 }
+
+
+/* Form Status Messages */
+.form-status {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-status.success {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.form-status.error {
+  background: #ff6b6b;
+  color: #fff;
+}

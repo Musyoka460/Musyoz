@@ -12,7 +12,7 @@
 <body>
   <header>
     <nav>
-      <div class="logo">MUSYOKA</div>
+      <div class="logo">MyPortfolio</div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -24,39 +24,40 @@
 
   <section class="contact-section">
     <div class="contact-container">
-      <h2 data-aos="fade-up" class="contH2">Get in Touch</h2>
-      <p data-aos="fade-up" data-aos-delay="100" class="contP">Feel free to reach out to me for collaborations, projects, or just a friendly hello!</p>
+      <h2 data-aos="fade-up">Get in Touch</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Feel free to reach out to me for collaborations, projects, or just a friendly hello!</p>
 
       <div class="contact-content">
         <!-- Contact Form -->
         <div class="contact-form" data-aos="fade-right" data-aos-delay="200">
-          <form>
+          <form id="contactForm">
             <div class="form-group">
-              <input type="text" placeholder="Your Name" required>
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-              <input type="email" placeholder="Your Email" required>
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-              <textarea placeholder="Your Message" rows="5" required></textarea>
+              <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn">Send Message</button>
           </form>
+          <div id="formStatus"></div>
         </div>
 
         <!-- Contact Info -->
         <div class="contact-info" data-aos="fade-left" data-aos-delay="200">
           <div class="info-item">
             <i class="fas fa-map-marker-alt"></i>
-            <p>Nairobi, Kenya</p>
+            <p>123 Main Street, City, Country</p>
           </div>
           <div class="info-item">
             <i class="fas fa-envelope"></i>
-            <p>cornellmusyoka@gmail.com</p>
+            <p>email@example.com</p>
           </div>
           <div class="info-item">
             <i class="fas fa-phone"></i>
-            <p>+254 703 125432</p>
+            <p>+123 456 7890</p>
           </div>
           <div class="social-links">
             <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -69,13 +70,14 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 MUSYOKA. All rights reserved.</p>
+    <p>&copy; 2023 MyPortfolio. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
