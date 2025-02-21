@@ -12,10 +12,9 @@ contactForm.addEventListener('submit', (e) => {
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
-  const message = document.getElementById('phone').value.trim();
 
   // Simple validation
-  if (!name || !email || !message|| !phone) {
+  if (!name || !email || !message){
     showFormStatus('Please fill in all fields.', 'error');
     return;
   }
@@ -30,7 +29,6 @@ contactForm.addEventListener('submit', (e) => {
     name: name,
     email: email,
     message: message,
-    phone: phone 
   })
   .then(() => {
     showFormStatus('Thank You,Message sent successfully! 🎉', 'success');
@@ -48,7 +46,7 @@ function showFormStatus(message, type) {
   setTimeout(() => {
     formStatus.textContent = '';
     formStatus.className = 'form-status';
-  }, 5000);
+  }, 6000);
 }
 
 // Helper: Validate email format
