@@ -12,9 +12,10 @@ contactForm.addEventListener('submit', (e) => {
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
+  const message = document.getElementById('phone').value.trim();
 
   // Simple validation
-  if (!name || !email || !message) {
+  if (!name || !email || !message|| !phone) {
     showFormStatus('Please fill in all fields.', 'error');
     return;
   }
@@ -28,7 +29,8 @@ contactForm.addEventListener('submit', (e) => {
   emailjs.send('service_g7wsxul', 'template_b8taesl', { // Replace with your Service ID and Template ID
     name: name,
     email: email,
-    message: message
+    message: message,
+    phone: phone 
   })
   .then(() => {
     showFormStatus('Thank You,Message sent successfully! 🎉', 'success');
