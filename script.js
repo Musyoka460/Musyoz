@@ -31,7 +31,7 @@ contactForm.addEventListener('submit', (e) => {
     message: message
   })
   .then(() => {
-    showFormStatus('Message sent successfully! 🎉', 'success');
+    showFormStatus('Thank You,Message sent successfully! 🎉', 'success');
     contactForm.reset();
   })
   .catch(() => {
