@@ -516,13 +516,9 @@ padding-left: 30px
 .marquee-item img {
   height: 50px; /* Adjust logo height */
   width: auto;
-  filter: grayscale(100%); /* Optional: Make logos grayscale */
-  transition: filter 0.3s ease;
+  
 }
 
-.marquee-item img:hover {
-  filter: grayscale(0%); /* Optional: Remove grayscale on hover */
-}
 
 /* Marquee Animation Keyframes */
 @keyframes marquee {
