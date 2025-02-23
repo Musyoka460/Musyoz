@@ -86,7 +86,7 @@ nav {
   transition: background 0.3s ease;
   box-shadow: 1px 1px 2px y;
   font-size: small;
-  font-weight: lighter;
+  font-weight: light;
 }
 
 .btn:hover {
