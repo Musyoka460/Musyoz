@@ -797,3 +797,76 @@ footer {
             75% { box-shadow: 0 0 20px #ff00ff; }
             100% { box-shadow: 0 0 10px #ffff00; }
         }
+  /* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideIn 0.5s ease forwards, fadeOut 0.5s ease 4.5s forwards;
+}
+
+.toast.success {
+  background: #4CAF50; /* Green for success */
+}
+
+.toast.error {
+  background: #ff6b6b; /* Red for error */
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-out Animation */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+/* Like Button Section */
+.like-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#likeButton {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+#likeButton:hover {
+  background: #ff4757;
+}
+
+#likeIcon {
+  font-size: 1.2rem;
+}
+
+#likeCount {
+  font-weight: bold;
+}
