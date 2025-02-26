@@ -815,7 +815,7 @@ footer {
 }
 
 .toast.success {
-  background: #4CAF50; /* Green for success */
+  background: red; /* Green for success */
 }
 
 .toast.error {

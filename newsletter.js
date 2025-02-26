@@ -15,7 +15,7 @@ newsletterForm.addEventListener('submit', (e) => {
   }
 
   // Show thank you message
-  showToast('Thank you for your subscription! The service is currently unavailable, but we will notify you when the service is ready.', 'success');
+  showToast('Oops! Something went wrong. Please try again later.', 'success');
 
   // Clear the input field
   emailInput.value = '';
