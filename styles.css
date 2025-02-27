@@ -476,12 +476,12 @@ padding-left: 30px
 }
 
 .form-status.success {
-  background: #4CAF50;
-  color: #fff;
+  background: green;
+  color: #fff;;
 }
 
 .form-status.error {
-  background: #ff6b6b;
+  background: red;
   color: #fff;
 }
 /* Marquee Container */
