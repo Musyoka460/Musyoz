@@ -870,3 +870,207 @@ footer {
 #likeCount {
   font-weight: bold;
 }
+/* More Button */
+.more-button {
+  background: #6a11cb; /* Primary color */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners */
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* Hover Effect */
+.more-button:hover {
+  background: #2575fc; /* Change color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active Effect (when clicked) */
+.more-button:active {
+  background: #1a5bbf; /* Darker color when clicked */
+  transform: translateY(0); /* Reset lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow */
+}
+
+/* Focus Effect (for accessibility) */
+.more-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.3); /* Blue glow for focus */
+}
+
+/* Graphics Design Section */
+.graphics-design-section {
+  padding: 60px 20px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.graphics-design-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.graphics-design-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.graphics-design-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.design-category {
+  margin-bottom: 60px;
+}
+
+.design-category h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6a11cb;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+}
+
+.design-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.design-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .graphics-design-container h2 {
+    font-size: 2rem;
+  }
+
+  .design-category h3 {
+    font-size: 1.8rem;
+  }
+
+  .design-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .graphics-design-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .design-category h3 {
+    font-size: 1.5rem;
+  }
+
+  .design-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Design Buttons */
+.design-button {
+  display: inline-block;
+  background: #6a11cb;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.design-button:hover {
+  background: #2575fc;
+  transform: translateY(-3px);
+}
+
+.design-button:active {
+  transform: translateY(0);
+}
+/* Design Grid for Horizontal Layout */
+.design-grid {
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 30px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  padding-bottom: 20px; /* Add padding to prevent overflow */
+}
+
+.design-card {
+  flex: 0 0 auto; /* Prevent cards from shrinking or growing */
+  width: 300px; /* Fixed width for each card */
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px grey;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px #3A3B43;
+}
+
+.design-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.design-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .design-grid {
+    gap: 20px; /* Reduce gap on smaller screens */
+  }
+
+  .design-card {
+    width: 250px; /* Smaller card width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .design-card {
+    width: 200px; /* Smaller card width for mobile */
+  }
+}
